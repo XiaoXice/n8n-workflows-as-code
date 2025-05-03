@@ -1,0 +1,72 @@
+{
+  "createdAt": "2025-03-07T17:10:14.791Z",
+  "updatedAt": "2025-03-08T14:50:55.044Z",
+  "id": "YYs6zKTRIkp4Oi8k",
+  "name": "Test Workflow as Code",
+  "active": true,
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        580,
+        300
+      ],
+      "parameters": {
+        "path": "test-workflow-as-code",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "webhookId": "test-workflow-as-code",
+      "id": "677b4384-ee14-4437-9922-ddd80ef61e3c"
+    },
+    {
+      "name": "Set",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [
+        820,
+        300
+      ],
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "testVariable",
+              "value": "test value"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "c333b92b-76fd-4548-9100-f1dd99241bc3"
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Set",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": null,
+  "pinData": {},
+  "versionId": "72199eb0-d2dc-4c17-ae51-c6b0498b5657",
+  "triggerCount": 1
+}

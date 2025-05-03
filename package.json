@@ -1,0 +1,38 @@
+{
+  "name": "n8n-workflows",
+  "version": "1.0.0",
+  "description": "Scripts to manage n8n workflows as code",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "create": "node scripts/create.js",
+    "pull": "node scripts/pull.js",
+    "push": "node scripts/push.js",
+    "execute": "node scripts/execute.js",
+    "lint": "eslint --ext .js,.json .",
+    "lint:fix": "eslint --ext .js,.json . --fix",
+    "format": "prettier --write \"**/*.{js,json}\"",
+    "format:check": "prettier --check \"**/*.{js,json}\"",
+    "lint-format": "npm run lint && npm run format"
+  },
+  "keywords": [
+    "n8n",
+    "workflows",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.0.3",
+    "fs-extra": "^11.1.0",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.5.3"
+  }
+}
