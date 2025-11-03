@@ -1,0 +1,13 @@
+connections:
+  description: 主要数据处理流程
+  flows:
+    - name: webhook_to_set
+      description: 从 Webhook 到 Set
+      source:
+        node: Webhook
+        output: main
+        index: 0
+      target:
+        node: Set
+        input: main
+        index: 0

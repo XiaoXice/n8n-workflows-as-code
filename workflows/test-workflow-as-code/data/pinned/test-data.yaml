@@ -1,0 +1,24 @@
+pinned_data:
+  Webhook:
+    - json:
+        headers:
+          host: n8n.example.com
+          user-agent: curl/8.4.0
+          accept: '*/*'
+          accept-encoding: gzip, br
+          cdn-loop: cloudflare; loops=1
+          cf-connecting-ip: 36.110.18.35
+          cf-ipcountry: CN
+          cf-ray: 998c91a238eb67a7-SJC
+          cf-visitor: '{"scheme":"https"}'
+          x-forwarded-for: 172.69.23.153
+          x-forwarded-host: n8n.example.com
+          x-forwarded-port: '443'
+          x-forwarded-proto: https
+          x-forwarded-server: 3f1adcdd9b03
+          x-real-ip: 172.69.23.153
+        params: {}
+        query:
+          code: '1'
+        webhookUrl: https://n8n.example.com/webhook-test/test-workflow-as-code
+        executionMode: test

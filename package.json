@@ -5,6 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "unpack": "node scripts/unpack.js",
+    "pack": "node scripts/pack.js",
+    "validate": "node scripts/validate.js",
     "create": "node scripts/create.js",
     "pull": "node scripts/pull.js",
     "push": "node scripts/push.js",
@@ -26,6 +29,8 @@
     "axios": "^1.6.0",
     "dotenv": "^16.0.3",
     "fs-extra": "^11.1.0",
+    "glob": "^11.0.3",
+    "js-yaml": "^4.1.0",
     "slugify": "^1.6.6"
   },
   "devDependencies": {

@@ -1,0 +1,14 @@
+{
+  "name": "test-workflow-as-code",
+  "version": "1.0.0",
+  "description": "n8n 工作流: Test Workflow as Code",
+  "type": "module",
+  "scripts": {
+    "build": "node ../scripts/pack.js",
+    "validate": "node ../scripts/validate.js",
+    "deploy": "echo 'Deploy script not implemented yet'"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

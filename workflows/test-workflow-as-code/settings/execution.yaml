@@ -1,0 +1,10 @@
+execution:
+  order: v1
+  timezone: UTC
+  save_manual_executions: true
+  data_retention:
+    success: all
+    error: all
+  timeout:
+    workflow: 3600
+    node: 300

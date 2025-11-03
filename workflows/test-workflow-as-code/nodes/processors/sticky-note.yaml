@@ -1,0 +1,23 @@
+node:
+  id: 4364b32d-52d9-4387-bd05-f2601b4ec198
+  name: Sticky Note
+  description: 便签节点
+  type: n8n-nodes-base.stickyNote
+  type_version: 1
+  position:
+    x: 0
+    'y': -192
+  parameters: {}
+  settings:
+    disabled: false
+    continue_on_fail: false
+    always_output_data: false
+    execute_once: false
+    retry_on_fail: false
+    max_tries: 3
+    wait_between_tries: 1000
+  notes: ''
+  color: ''
+  tags:
+    - processor
+  category: processors
